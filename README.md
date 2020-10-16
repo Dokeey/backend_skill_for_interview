@@ -44,7 +44,7 @@
 
 ## :white_check_mark: 현재 포트폴리오 기술
 
-[Python](python/README.md)
+[Python](Python/README.md)
 
 Django
 
@@ -62,7 +62,7 @@ Travis CI
 
 
 
-## [:white_check_mark: Python](python/README.md)
+## [:white_check_mark: Python](Python/README.md)
 
 ### 사용한 이유
 

@@ -1,7 +1,7 @@
 ## 목차 - 개발 일반지식
 
 - [OOP](#OOP)
-- [Call by value vs Call by reference](#Call by value vs Call by reference)
+- [Call by value vs Call by reference](#call-by-value-vs-call-by-reference)
 
 
 

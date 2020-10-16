@@ -1,4 +1,4 @@
-## 목차 - Python
+# 목차 - Python
 
 - 사용한 이유
 
@@ -6,45 +6,43 @@
 
 - 개념
 
-  1. [tuple과 list의 차이점](#1.-tuple과-list의-차이점)
+  1. [tuple과 list의 차이점](#1-tuple과-list의-차이점)
 
-  2. [파이썬의 메모리 관리](#2.-파이썬의-메모리-관리)
+  2. [파이썬의 메모리 관리](#2-파이썬의-메모리-관리)
 
-  3. [Function call 혹은 A callable Object는 무엇인가](#3.-Function-call-혹은-A-callable-Object는-무엇인가)
+  3. [Function call 혹은 A callable Object는 무엇인가](#3-function-call-혹은-a-callable-object는-무엇인가)
 
-  4. [Passed by assignment](#4.-Passed-by-assignment)
+  4. [Passed by assignment](#4-passed-by-assignment)
 
-  5. [Global Interpreter Lock](#5. Global Interpreter Lock)
+  5. [Global Interpreter Lock](#5-global-interpreter-lock)
 
-  6. [Iterators](#6. Iterators)
+  6. [Iterators](#6-iterators)
 
-  7. [Generator](#7. Generator)
+  7. [Generator](#7-generator)
 
-  8. [Closures](#8. Closures)
+  8. [Closures](#8-closures)
 
-  9. [Decorator](#9.-Decorator)
+  9. [Decorator](#9-decorator)
 
+# :white_check_mark: Python
 
-
-## :white_check_mark: Python
-
-### 사용한 이유
+## 사용한 이유
 
 1. 사용자 친화적인 언어 > 인기가 많음
 2. 풍부한 커뮤니티
-3. 그로인해서 생긴 여러 라이브러리와 여러 사용처에서 쓰이는 범용성
+3.  그로인해서 생긴 여러 라이브러리와 여러 사용처에서 쓰이는 범용성
 
 
 
-### 한계와 대처방안
+## 한계와 대처방안
 
 하드웨어에 직접 접근하고 아주 고성능의 속도를 내야 한다거나 혹은 모바일 프로그래밍을 해야한다면 파이썬은 적절하지 않다고 알고있다. 이에 맞는 언어나 플랫폼을 공부하여 적용하는 것이 바람직하다고 본다.
 
 
 
-### 개념
+## 개념
 
-#### 1. tuple과 list의 차이점
+### 1. tuple과 list의 차이점
 
 - list는 mutable하고 tuple은 immutable하다. 
 - 따라서 dict의 key로 올 수 있는건 tuple이다.
@@ -53,7 +51,7 @@
 
 
 
-#### 2. 파이썬의 메모리 관리
+### 2. 파이썬의 메모리 관리
 
 > 일반적인 메모리 관리(stack, heap 영역)
 
@@ -65,13 +63,13 @@
 
 
 
-#### 3. Function call 혹은 A callable Object는 무엇인가
+### 3. Function call 혹은 A callable Object는 무엇인가
 
 파이썬에서 함수는 호출가능한 객체로 취급된다. 클래스 내부에 \__call__ 함수가 구현되어있다면 생성된 instance는 호출가능한 객체가 된다.
 
 
 
-#### 4. Passed by assignment
+### 4. Passed by assignment
 
 파이썬의 자료형에 따라 call by value 혹은 call by reference가 될 수 있다.
 
@@ -83,7 +81,7 @@ mutable 자료형 : list, dictionary 등
 
 
 
-#### 5. Global Interpreter Lock
+### 5. Global Interpreter Lock
 
 > 스레드와 동시성
 
@@ -97,7 +95,7 @@ GIL은 하나의 쓰레드에게 모든 자원의 점유를 허락한다.
 
 
 
-#### 6. Iterators
+### 6. Iterators
 
 Iterable한 객체를 순회할 수 있게 하는 객체
 
@@ -111,7 +109,7 @@ Iterable한 객체를 순회할 수 있게 하는 객체
 
 
 
-#### 7. Generator
+### 7. Generator
 
 Iterator의 특수한 한 형태
 
@@ -121,7 +119,7 @@ yield 키워드를 사용하여 차례대로 반환한다.
 
 
 
-#### 8. Closures
+### 8. Closures
 
 클로져는 함수 객체로서 다른 함수를 반환한다. 
 
@@ -131,7 +129,7 @@ yield 키워드를 사용하여 차례대로 반환한다.
 
 
 
-#### 9. Decorator
+### 9. Decorator
 
 일급객체와 클로져의 특성을 이용하여 함수 객체에서 새로운 기능을 추가하는 것을 쉽게 할수 있는 방법.
 
