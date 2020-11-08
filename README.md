@@ -46,51 +46,59 @@
 
 [Python](Python/README.md)
 
-Django
+[Django](Django/README.md)
 
 PostgreSQL
 
 Docker
 
-### AWS
+AWS
 
 NginX
 
 Travis CI
 
-### React
+React
 
 
 
 ## [:white_check_mark: Python](Python/README.md)
 
-### 사용한 이유
+- 사용한 이유
 
-### 한계와 대처방안
+- 한계와 대처방안
 
-### 개념
+- 개념
 
-#### 1. tuple과 list의 차이점
+1. tuple과 list의 차이점
 
-#### 2. 파이썬의 메모리 관리
+2. 파이썬의 메모리 관리
 
-#### 3. Function call 혹은 A callable Object는 무엇인가
+3. Function call 혹은 A callable Object는 무엇인가
 
-#### 4. Passed by assignment
+4. Passed by assignment
 
-#### 5. Global Interpreter Lock
+5. Global Interpreter Lock
 
-#### 6. Iterators
+6. Iterators
 
-#### 7. Generator
+7. Generator
 
-#### 8. Closures
+8. Closures
 
-#### 9. Decorator
+9. Decorator
 
+   
 
+## [:white_check_mark: Django](Django/README.md)
 
-## :white_check_mark: Django
+- 사용한 이유
+- 한계와 대처방안
+- 개념
+
+1. Django ORM의 작동 방식
+2. 정적파일 서빙
+3. 세션 관리
 
 
 
