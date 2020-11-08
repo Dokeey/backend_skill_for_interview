@@ -35,14 +35,16 @@
 
 ### Django ORM의 작동 방식
 
+> 출처: https://github.com/KimSoungRyoul/Django_ORM_pratice_project/issues/7
+
 - Lazy Loading 지연로딩
   - 정말 필요한 시점에만 호출된다.
   - 선언만 하면 SQL이 호출되지 않는다.
   - 정말 필요한 만큼만 호출한다.
-    - ![image-20201109025254023](/Users/hood/Library/Application Support/typora-user-images/image-20201109025254023.png)
+    - ![image](https://user-images.githubusercontent.com/38549761/98473942-8f24d200-2238-11eb-86c0-f254e4d1dccc.png)
 - Caching
   - 호출하는 순서가 바뀌는 것만으로도 캐싱때문에 발생하는 SQL 호출수가 달라질 수 있다.
-    - ![image-20201109025333545](/Users/hood/Library/Application Support/typora-user-images/image-20201109025333545.png)
+    - ![image](https://user-images.githubusercontent.com/38549761/98474340-ac59a080-2238-11eb-8142-2b842b8f2b45.png)
 - Eager Loading
   - for문을 통해 쿼리셋을 호출할 시 N+1번 SQL을 호출할 수 있다.
   - select_related()와 prefetch_related()라는 메서드로 해당 문제를 해결
