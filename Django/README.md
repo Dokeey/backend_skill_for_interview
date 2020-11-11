@@ -8,7 +8,7 @@
 
   1. [Django ORM의 작동 방식](#django-orm의-작동방식)
 
-  2. [정적파일 서빙](#정적파일-서빙)
+  2. [정적파일](#정적파일)
 
 
 # :white_check_mark: Django
