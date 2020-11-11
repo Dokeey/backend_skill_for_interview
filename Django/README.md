@@ -10,8 +10,6 @@
 
   2. [정적파일 서빙](#정적파일-서빙)
 
-  3. [세션 관리](#세션-관리)
-
 
 # :white_check_mark: Django
 
@@ -58,7 +56,61 @@
   - ORM을 아예 포기하지말고 .raw()를 사용하자
   - 역방향참조모델을 filter()절에 넣어서 JOIN을 유도하자
 
-### 정적파일 서빙
+### 정적파일
 
-### 세션 관리
+Static file과 Media file로 구분한다.
 
+Static 파일은 Javascript, CSS, Image 파일처럼 웹 서비스에서 사용하려고 미리 준비해 놓은 정적 파일입니다. 파일 자체가 고정되어 있고, 서비스 중에도 수시로 추가되거나 변경되지 않고 고정되어 있습니다.
+
+Media file은 이용자가 웹에서 올리는(upload) 파일입니다. 파일 자체는 고정되어 이지만, 언제 어떤 파일이 정적 파일로 제공되고 준비되는지 예측할 수 없습니다.
+
+Django로 운영되는 프로젝트의 설정을 관리하는 `settings.py`에 Static file와 관련된 항목이 다섯 가지 존재하며, 보통은 다음 세 가지를 사용합니다.
+
+- `STATICFILES_DIRS`
+
+  - 개발 단계에서 사용하는 정적 파일이 위치한 경로들을 지정하는 설정 항목입니다.
+
+  - ```python
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static'),
+    )
+    ```
+
+- `STATIC_URL`
+
+  - 웹 페이지에서 사용할 정적 파일의 최상위 URL 경로입니다. 이 최상위 경로 자체는 실제 파일이나 디렉터리가 아니며, URL로만 존재하는 단위입니다. 
+
+  - 문자열은 반드시 `/`로 끝나야 합니다. `findstatic` 명령어로 탐색되는 정적 파일 경로에 `STATIC_URL` 경로를 합치면 실제 웹에서 접근 가능한 URL이 됩니다.
+
+  - `STATIC_URL`은 정적 파일이 실제 위치한 경로를 참조하며, 이 실제 경로는 `STATIC_ROOT` 설정 항목에 지정된 경로입니다.
+
+  - ```python
+    STATIC_URL = '/static/'
+    ```
+
+- `STATIC_ROOT`
+
+  - `STATIC_ROOT`는 Django 프로젝트에서 사용하는 모든 정적 파일을 한 곳에 모아넣는 경로입니다. 한 곳에 모으는 기능은 `manage.py` 파일의 `collectstatic` 명령어로 수행합니다. 각 Django 앱 디렉터리에 있는 `static` 디렉터리와 `STATICFILES_DIRS`에 지정된 경로에 있는 모든 파일을 모읍니다.
+
+  - `settings.py`의 `DEBUG`가 `True`로 설정되어 있으면 `STATIC_ROOT` 설정은 작용하지 않으며, `STATIC_ROOT`는 실 서비스 환경을 위한 설정 항목입니다. 
+
+  - ```python
+    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    ```
+
+`settings.py`에 Media file와 관련된 항목이 두 가지 존재합니다.
+
+- ` MEDIA_ROOT`는 이름이 `STATIC_ROOT`과 비슷한데, 업로드가 끝난 파일을 배치할 최상위 경로를 지정하는 설정 항목입니다. `MEDIA_ROOT`는 `STATIC_ROOT`와 다른 경로를 지정해야 합니다.
+
+- `MEDIA_URL`은 `STATIC_URL`과 이름도 비슷하고 역할도 비슷합니다. `MEDIA_URL`도 `MEDIA_ROOT`와 마찬가지로 `STATIC_URL`과 URL 경로가 달라야 합니다.
+
+- ```python
+  MEDIA_URL = '/upload_files/'
+  MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+  ```
+
+- ```python
+  urlpatterns += static('/upload_files/', document_root=settings.MEDIA_ROOT)
+  ```
+
+  urls.py에 추가 설정이 필요하다.
