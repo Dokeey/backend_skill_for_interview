@@ -98,31 +98,24 @@ React
 
 1. Django ORM의 작동 방식
 2. 정적파일 서빙
-3. 세션 관리
 
 
 
-## :white_check_mark: ​API
+## :white_check_mark: [API](API/README.md)
 
-### Django Rest Framework
+- :white_check_mark: ​인증
 
-### :white_check_mark: ​인증
+    - OAuth
 
-#### OAuth
+    - 기본적인 인증
 
-#### 기본적인 인증
+    - 토큰 인증
 
-#### 토큰 인증
-
-#### JWT
-
-
-
-### REST
-
-> Roy Fielding의 문서 읽기
-
-### JSON APIs
+    - JWT
+- REST
+- REST API
+- RESTful
+- Django Rest Framework
 
 
 

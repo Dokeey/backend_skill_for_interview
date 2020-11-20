@@ -58,6 +58,8 @@
 
 ### 정적파일
 
+> 출처: https://blog.hannal.com/2015/04/start_with_django_webframework_06/
+
 Static file과 Media file로 구분한다.
 
 Static 파일은 Javascript, CSS, Image 파일처럼 웹 서비스에서 사용하려고 미리 준비해 놓은 정적 파일입니다. 파일 자체가 고정되어 있고, 서비스 중에도 수시로 추가되거나 변경되지 않고 고정되어 있습니다.
