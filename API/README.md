@@ -4,13 +4,11 @@
 
 
 - [:white_check_mark: ​인증](#인증)
-- [OAuth](#oauth)
-    
-- [기본적인 인증](#기본적인-인증)
-    
-- [토큰 인증](#토큰-인증)
-    
-- [JWT](#jwt)
+
+  - [OAuth](#oauth)
+  - [기본적인 인증](#기본적인-인증)
+  - [토큰 인증](#토큰-인증)
+  - [JWT](#jwt)
 - [REST](#rest)
 - [REST API](#rest-api)
 - [RESTful](#restful)
