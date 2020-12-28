@@ -35,9 +35,8 @@
 ### 상세 정리 내용
 
 - 굳이 이 기술을 사용한 이유
-
+- 기술이 나오게 된 배경
 - 한계와 대처방안
-
 - 개념
 
 
@@ -48,9 +47,9 @@
 
 [Django](Django/README.md)
 
-PostgreSQL
+[PostgreSQL](PostgreSQL/README.md)
 
-Docker
+[Docker](Docker/README.md)
 
 AWS
 
@@ -60,9 +59,11 @@ Travis CI
 
 React
 
+JavaScript
 
 
-## [:white_check_mark: Python](Python/README.md)
+
+## [1. Python](Python/README.md) :white_check_mark: 
 
 - 사용한 이유
 
@@ -70,40 +71,32 @@ React
 
 - 개념
 
-1. tuple과 list의 차이점
-
-2. 파이썬의 메모리 관리
-
-3. Function call 혹은 A callable Object는 무엇인가
-
-4. Passed by assignment
-
-5. Global Interpreter Lock
-
-6. Iterators
-
-7. Generator
-
-8. Closures
-
-9. Decorator
+  1. tuple과 list의 차이점
+  2. 파이썬의 메모리 관리
+  3. Function call 혹은 A callable Object는 무엇인가
+  4. Passed by assignment
+  5. Global Interpreter Lock
+  6. Iterators
+  7. Generator
+  8. Closures
+  9. Decorator
 
    
 
-## [:white_check_mark: Django](Django/README.md)
+## [2. Django](Django/README.md) :white_check_mark: 
 
 - 사용한 이유
 - 한계와 대처방안
 - 개념
 
-1. Django ORM의 작동 방식
-2. 정적파일 서빙
+  1. Django ORM의 작동 방식
+  2. 정적파일 서빙
 
 
 
-## :white_check_mark: [API](API/README.md)
+## [3. API](API/README.md) :white_check_mark: 
 
-- :white_check_mark: ​인증
+- 인증 :white_check_mark: 
 
     - OAuth
 
@@ -119,29 +112,22 @@ React
 
 
 
-## :white_check_mark: 관계형 DB
-
-### PostgreSQL
+## [4. PostgreSQL](PostgreSQL/README.md) :white_check_mark: 
 
 
 
-## :white_check_mark: ​DB 상세 정보
+## 5. DB 상세 정보 :white_check_mark: 
 
-### ORM
-
-### ACID
-
-### 트랜잭션
-
-### N+1 문제
-
-### 정규화
-
-### 인덱스와 작동 방식
+- ORM
+- ACID
+- 트랜잭션
+- N+1 문제
+- 정규화
+- 인덱스와 작동 방식
 
 
 
-## :white_check_mark: 테스팅
+## 6. 테스팅 :white_check_mark: 
 
 ### 통합 테스트
 
@@ -151,27 +137,32 @@ React
 
 
 
-## 컨테이너화 vs 가상화
+## [7. Docker](Docker/README.md) :white_check_mark: 
 
-### :white_check_mark: ​Docker
+- 사용한 이유
+- 한계와 대처방안
+- 개념
+
+  1. 도커란?
+  2. 레이어 계층
 
 
 
-## :white_check_mark: ​CI/CD
+## 8. CI/CD :white_check_mark: 
 
 ### Travis CI
 
 
 
-## :ballot_box_with_check: 웹 소켓
+## 9. 웹 소켓 :ballot_box_with_check:
 
-## :ballot_box_with_check: 웹 서버
+## 10. 웹 서버 :ballot_box_with_check:
 
-### :white_check_mark: ​Nginx
+### Nginx :white_check_mark: 
 
 
 
-## [:white_check_mark: 개발 일반지식](devel_common_sense/README.md)
+## [11. 개발 일반지식](devel_common_sense/README.md) :white_check_mark: 
 
 ### OOP
 
@@ -179,7 +170,7 @@ React
 
 
 
-## :white_check_mark: 웹 개발 일반지식
+## 12. 웹 개발 일반지식 :white_check_mark: 
 
 ### 인터넷은 어떻게 작동될까
 
@@ -195,7 +186,7 @@ React
 
 
 
-## [:white_check_mark: ​OS 및 일반지식](OS_common_sense/README.md)
+## [13. OS 및 일반지식](OS_common_sense/README.md)​ :white_check_mark: 
 
 ### OS의 일반적 작동 방식
 
@@ -217,7 +208,7 @@ React
 
 
 
-## :white_check_mark: 캐싱
+## 14. 캐싱 :white_check_mark: 
 
 ### CDN
 
@@ -231,7 +222,7 @@ React
 
 
 
-## :white_check_mark: 웹 보안
+## 15. 웹 보안 :white_check_mark: 
 
 ### MD5와 사용하지 않는 이유
 
@@ -255,7 +246,7 @@ React
 
 
 
-## :white_check_mark: ​개발과 설계 원칙
+## 16. 개발과 설계 원칙 :white_check_mark: 
 
 ### SOLID
 
@@ -267,7 +258,7 @@ React
 
 
 
-## :white_check_mark: ​아키텍처 패턴
+## 17. 아키텍처 패턴 :white_check_mark: 
 
 ### 모놀로틱 앱
 
@@ -275,31 +266,31 @@ React
 
 ### SOA
 
-### :ballot_box_with_check: CQRS와 이벤트 소싱
+### CQRS와 이벤트 소싱 :ballot_box_with_check:
 
 ### Serverless
 
 
 
-## 검색 엔진
+## 18. 검색 엔진
 
-### :white_check_mark: ​Elasticsearch
-
-
-
-## :ballot_box_with_check: 메세지 브로커
-
-### :white_check_mark: ​RabbitMQ
+### Elasticsearch :white_check_mark: 
 
 
 
-## :ballot_box_with_check: GraphQL
+## 19. 메세지 브로커 :ballot_box_with_check:
 
-### :white_check_mark: ​Apollo
+### RabbitMQ :white_check_mark: 
 
 
 
-## :white_check_mark: ​확장성
+## 20. GraphQL :ballot_box_with_check:
+
+### Apollo :white_check_mark: 
+
+
+
+## 21. 확장성 :white_check_mark:
 
 > 프로덕트 지속 가능성에 대해 배우며 관심을 기울여야 하는 일반적인 주제
 
