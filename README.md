@@ -51,9 +51,7 @@
 
 [Docker](Docker/README.md)
 
-AWS
-
-NginX
+[NginX](WebServer/README.md)
 
 Travis CI
 
@@ -156,7 +154,9 @@ JavaScript
 
 ## 9. 웹 소켓 :ballot_box_with_check:
 
-## 10. 웹 서버 :ballot_box_with_check:
+## 10. [웹 서버](WebServer/README.md) :ballot_box_with_check:
+
+### Apache
 
 ### Nginx :white_check_mark: 
 
