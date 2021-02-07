@@ -8,7 +8,7 @@
 
   1. [Django ORM의 작동 방식](#django-orm의-작동방식)
 2. [정적파일](#정적파일)
-  3. [django-channels 라이브러리 기본적 이해(데이터 흐름)](#django-channels-라이브러리-기본적-이해(데이터-흐름))
+  3. [django-channels 라이브러리 기본적 이해(데이터 흐름)](#django-channels-라이브러리-기본적-이해데이터-흐름)
 
 
 # :white_check_mark: Django
