@@ -170,7 +170,7 @@ JavaScript
 
 
 
-## 12. 웹 개발 일반지식 :white_check_mark: 
+## 12. 웹 일반지식 :white_check_mark: 
 
 ### 인터넷은 어떻게 작동될까
 
