@@ -16,6 +16,7 @@
 	8. [Closures](#8-closures)
   9. [Decorator](#9-decorator)
 	10. [@classmethod와 @staticmethod](#10-classmethod와-staticmethod)
+	11. [@property](#11-property)
 
 # :white_check_mark: Python
 
@@ -222,5 +223,39 @@ c = KoreaDog.class_show('설기', 2)
 print(c)
 # 설기의 나이는 2이고 korea에 산다.
 
+```
+
+
+
+### 11. @property
+
+파이썬에서 클래스를 사용할때 private 한 속성을 최대한 가독성 쉽고 pythonic 하게 제어하는 방법은 `@property` 데코레이터를 사용하는 것이다.
+
+```python
+class Fridge:
+    def __init__(self):
+        self.celsius = 4
+
+    @property
+    def celsius(self):
+        return self.__celsius
+
+    @celsius.setter
+    def celsius(self, temp):
+        if temp < 0:
+            self.__celsius = 0
+        elif temp > 10:
+            self.__celsius = 10
+        else:
+            self.__celsius = temp
+
+
+f = Fridge()
+print(f.celsius)
+
+f.celsius = 11
+print(f.celsius)
+
+# 출처: https://velog.io/@kksh1205/python-%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5%EA%B3%BC-property-%EB%8D%B0%EC%BD%94%EB%A0%88%EC%9D%B4%ED%84%B0
 ```
 
