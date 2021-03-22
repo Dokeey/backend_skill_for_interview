@@ -133,3 +133,101 @@ yield 키워드를 사용하여 차례대로 반환한다.
 
 일급객체와 클로져의 특성을 이용하여 함수 객체에서 새로운 기능을 추가하는 것을 쉽게 할수 있는 방법.
 
+```python
+
+# 데코레이터에 인자를 받고, 함수에도 인자를 받는 상황.
+class DecoClass:
+    """
+    클래스로 데코레이터 만들기
+    """
+
+    def __init__(self, name=None):
+        self.name = name
+
+    def __call__(self, func, *args, **kwargs):
+        print("1 데코 지정", self.name)
+        return self.Wrap(func)
+
+    class Wrap:
+        def __init__(self, func):
+            self.func = func
+
+        def __call__(self, *args, **kwargs):
+            print("2 데코 지정")
+            return self.func(*args, **kwargs)
+
+
+def deco_func(name):
+    """
+    함수로 데코레이터 만들기
+    """
+
+    def wrap(fn):
+        print('deco', name)
+
+        def wrap2(string, string2):
+            return fn(string, string2)
+
+        return wrap2
+
+    return wrap
+
+
+@deco_func('설기')
+# @DecoClass('설기')
+def common_func(string, string2):
+    return "common_func : " + string + string2
+
+  
+print(common_func(string='hello', string2='good'))
+
+```
+
+
+
+### 10. @classmethod와 @staticmethod
+
+이 두 데코레이터는 클래스안에서 사용된다.
+
+일반적으로 클래스를 정의하고 instance를 생성한 후에 instance를 통해 클래스 메소드를 사용할 수 있지만, 두 데코레이터를 이용하면 클래스에서 직접적으로 호출할 수 있다.
+
+가장 큰 차이점은 상속했을때 차이가 난다. `@classmethod` 는 cls 인자를 통해 현재 클래스의 객체에 접근할 수 있지만, `@staticmethod` 는 정의된 시점의 클래스 객체의 정보를 반환한다.
+
+```python
+class Dog:
+    local = "usa"
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __str__(self):
+        return f"{self.name}의 나이는 {self.age}이고 {self.local}에 산다."
+
+    @staticmethod
+    def static_show(*args):
+        return Dog(*args)
+
+    @classmethod
+    def class_show(cls, *args):
+        return cls(*args)
+
+
+class KoreaDog(Dog):
+    local = "korea"
+
+
+a = Dog("big", 10)
+print(a)
+# big의 나이는 10이고 usa에 산다.
+
+b = KoreaDog.static_show('설기', 2)
+print(b)
+# 설기의 나이는 2이고 usa에 산다.
+
+c = KoreaDog.class_show('설기', 2)
+print(c)
+# 설기의 나이는 2이고 korea에 산다.
+
+```
+
