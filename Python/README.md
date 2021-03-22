@@ -7,22 +7,15 @@
 - 개념
 
   1. [tuple과 list의 차이점](#1-tuple과-list의-차이점)
-
-  2. [파이썬의 메모리 관리](#2-파이썬의-메모리-관리)
-
+2. [파이썬의 메모리 관리](#2-파이썬의-메모리-관리)
   3. [Function call 혹은 A callable Object는 무엇인가](#3-function-call-혹은-a-callable-object는-무엇인가)
-
-  4. [Passed by assignment](#4-passed-by-assignment)
-
+4. [Passed by assignment](#4-passed-by-assignment)
   5. [Global Interpreter Lock](#5-global-interpreter-lock)
-
-  6. [Iterators](#6-iterators)
-
+6. [Iterators](#6-iterators)
   7. [Generator](#7-generator)
-
-  8. [Closures](#8-closures)
-
+8. [Closures](#8-closures)
   9. [Decorator](#9-decorator)
+10. [@classmethod와 @staticmethod](#10-@classmethod와-@staticmethod)
 
 # :white_check_mark: Python
 
